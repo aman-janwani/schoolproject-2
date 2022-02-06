@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/image2.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVIDSY</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #161625;
+        font-family: "Monaco", monospace;
+      }
+      .navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar-section-one {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        flex-grow: 1;
+      }
+      .logo {
+        cursor: pointer;
+        height: 80px;
+      }
+      .navbar-section-two {
+        color: #bc1823;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #e23028;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .link {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 50px;
+      }
+      .live-img {
+        height: 20px;
+        width: 20px;
+        margin: 4px;
+      }
+      .live {
+        cursor: pointer;
+        flex-grow: 1;
+        max-width: 250px;
+        margin: 5px;
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+        border: #e23028 solid 2px;
+        align-items: center;
+        padding: 9px;
+        border-radius: 15px;
+        font-family: "Monaco", monospace;
+      }
+      .live:hover {
+        background: #e23028;
+        color: #fff;
+      }
+      main {
+        background: #1e1e30;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 20px;
+      }
+      .about {
+        display: flex;
+        margin-top: 50px;
+      }
+      .content {
+        color: #fff;
+        flex-grow: 1;
+        margin: 20px;
+      }
+      .image {
+        flex-grow: 0;
+        margin-right: 60px;
+        padding: 10px;
+      }
+      .covid {
+        height: 360px;
+        animation: rotate 15s linear infinite;
+        margin: 10px;
+      }
+      .content > h1 {
+        font-size: 45px;
+        color: #e23028;
+        margin-bottom: 60px;
+      }
+      .content > p {
+        width: 85%;
+        color: #a2d2ff;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .variants {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .variants > h1 {
+        font-size: 50px;
+        color: #2ce857;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .delta {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .delta > h1 {
+        font-size: 40px;
+        color: #bc1823;
+        margin-bottom: 20px;
+      }
+      .delta > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .delta > div > p {
+        font-size: 24px;
+        color: #a2d2ff;
+        margin-bottom: 20px;
+      }
+      .delta > div > img {
+        height: 350px;
+        width: 500px;
+        border-radius: 20px;
+      }
+      .omicron {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .omicron > h1 {
+        font-size: 40px;
+        color: #bc1823;
+        margin-top: 20px;
+      }
+      .omicron > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .omicron > div > img {
+        height: 350px;
+        width: 400px;
+        border-radius: 20px;
+      }
+      .omicron > div > p {
+        font-size: 24px;
+        color: #a2d2ff;
+        margin-bottom: 20px;
+        text-align: right;
+        margin-left: 10px;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-section-one">
+        <a href="index.html">
+          <img src="images/image1.png" class="logo" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-section-two">
+        <div class="links">
+          <a href="symptoms.html"><h1 class="link">Symptoms</h1></a>
+          <a href="prevention.html"><h1 class="link">Prevention</h1></a>
+          <a href="vaccines.html"><h1 class="link">Vaccines</h1></a>
+        </div>
+        <a href="livedata.html">
+          <button class="live">
+            <img src="images/image3.png" class="live-img" alt="live" />
+            <h1>Live Covid Updates</h1>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="about">
+        <div class="content">
+          <h1>What is Covid-19?</h1>
+          <p>
+            Coronavirus disease 2019 (COVID-19) is an infectious disease caused
+            by SARS coronavirus 2 (SARS-CoV-2) a virus closely related to the
+            SARS virus.
+          </p>
+          <p>
+            The disease is the cause of the COVID-19 pandemic. People who get
+            the disease might get fever, dry cough, fatigue (tiredness), loss of
+            taste or smell, and shortness of breath. A sore throat, runny nose,
+            or sneezing is less common. In some cases, people might wheeze, have
+            difficulty breathing, have fewer white blood cells, or not be
+            hungry. In severe cases, COVID-19 can kill people. COVID-19 has
+            killed more than four million people around the world. Some infected
+            people are asymptomatic carriers, which means that they spread the
+            virus without anybody knowing they're sick.
+          </p>
+          <p>
+            The countries with the most infected people are the USA, India, and
+            Brazil. The COVID-19 virus travels from one person to another
+            through air droplets.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/image4.png" class="covid" alt="covid" />
+        </div>
+      </div>
+      <div class="variants">
+        <h1>Covid-19 Variants</h1>
+        <div class="delta">
+          <h1>Delta</h1>
+          <div>
+            <p>
+              This variant is nearly twice as contagious as earlier variants and
+              might cause more severe illness. The greatest risk of transmission
+              is among unvaccinated people. People who are fully vaccinated can
+              get vaccine breakthrough infections and spread the virus to
+              others. However, it appears that vaccinated people spread COVID-19
+              for a shorter period than do unvaccinated people. While research
+              suggests that COVID-19 vaccines are slightly less effective
+              against the delta variant, the Pfizer-BioNTech, Moderna and
+              Janssen/Johnson & Johnson COVID-19 vaccines still appear to
+              provide protection against severe COVID-19.
+            </p>
+            <img src="images/image6.png" alt="delta" />
+          </div>
+        </div>
+        <div class="omicron">
+          <h1>Omicron</h1>
+          <div>
+            <img src="images/image5.jpg" alt="omicron" />
+            <p>
+              This variant might spread more easily than other variants,
+              including delta. But it’s not yet clear if omicron causes more
+              severe disease. It’s expected that people who are fully vaccinated
+              likely can get breakthrough infections and spread the virus to
+              others. However, the COVID-19 vaccines are expected to be
+              effective at preventing severe illness. This variant also reduces
+              the effectiveness of some monoclonal antibody treatments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

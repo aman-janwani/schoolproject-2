@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/image2.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVIDSY</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #161625;
+        font-family: "Monaco", monospace;
+      }
+      .navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar-section-one {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        flex-grow: 1;
+      }
+      .logo {
+        cursor: pointer;
+        height: 80px;
+      }
+      .navbar-section-two {
+        color: #bc1823;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #e23028;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .link {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 50px;
+      }
+      .live-img {
+        height: 20px;
+        width: 20px;
+        margin: 4px;
+      }
+      .live {
+        cursor: pointer;
+        flex-grow: 1;
+        max-width: 250px;
+        margin: 5px;
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+        border: #e23028 solid 2px;
+        align-items: center;
+        padding: 9px;
+        border-radius: 15px;
+        font-family: "Monaco", monospace;
+      }
+      .live:hover {
+        background: #e23028;
+        color: #fff;
+      }
+      main {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        background: #1e1e30;
+      }
+      main > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #83bff7;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+      }
+      th {
+        font-size: 25px;
+        color: #83bff7;
+        padding: 10px;
+        border: 1px solid #83bff7;
+        border-radius: 10px;
+      }
+      td {
+        font-size: 20px;
+        padding: 8px;
+        border: 1px solid #2ce857;
+        border-radius: 10px;
+        color: #2ce857;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-section-one">
+        <a href="index.html">
+          <img src="images/image1.png" class="logo" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-section-two">
+        <div class="links">
+          <a href="symptoms.html"><h1 class="link">Symptoms</h1></a>
+          <a href="prevention.html"><h1 class="link">Prevention</h1></a>
+          <a href="vaccines.html"><h1 class="link">Vaccines</h1></a>
+        </div>
+        <a href="livedata.html">
+          <button class="live">
+            <img src="images/image3.png" class="live-img" alt="live" />
+            <h1>Live Covid Updates</h1>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1>Live Covid Cases</h1>
+      <table class="table">
+        <tr>
+          <th>No.</th>
+          <th>State</th>
+          <th>Total Confirmed</th>
+          <th>Total Recoverd</th>
+          <th>Total Deaths</th>
+        </tr>
+      </table>
+    </main>
+  </body>
+  <script>
+    const table = document.querySelector(".table");
+    const getCases = async () => {
+      const response = await fetch(
+        "https://api.rootnet.in/covid19-in/stats/latest"
+      );
+      const data = await response.json();
+      for (let i = 0; i < 36; i++) {
+        const html = `
+        <tr>
+          <td>${i}</td>
+          <td>${data.data.regional[i].loc}</td>
+          <td>${data.data.regional[i].totalConfirmed}</td>
+          <td>${data.data.regional[i].discharged}</td>
+          <td>${data.data.regional[i].deaths}</td>
+        </tr>
+        `;
+        // console.log(data);
+        table.innerHTML += html;
+      }
+    };
+    getCases();
+  </script>
+</html>

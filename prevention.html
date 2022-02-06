@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/image2.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVIDSY</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #161625;
+        font-family: "Monaco", monospace;
+      }
+      .navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar-section-one {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        flex-grow: 1;
+      }
+      .logo {
+        cursor: pointer;
+        height: 80px;
+      }
+      .navbar-section-two {
+        color: #bc1823;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #e23028;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .link {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 50px;
+      }
+      .live-img {
+        height: 20px;
+        width: 20px;
+        margin: 4px;
+      }
+      .live {
+        cursor: pointer;
+        flex-grow: 1;
+        max-width: 250px;
+        margin: 5px;
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+        border: #e23028 solid 2px;
+        align-items: center;
+        padding: 9px;
+        border-radius: 15px;
+        font-family: "Monaco", monospace;
+      }
+      .live:hover {
+        background: #e23028;
+        color: #fff;
+      }
+      main {
+        background: #1e1e30;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 20px;
+      }
+      main > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #83bff7;
+      }
+      main > h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: #2ce857;
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      main > ul {
+        font-size: 20px;
+        margin-left: 50px;
+        color: #83bff7;
+        text-align: left;
+      }
+      main > ul > li {
+        margin-bottom: 20px;
+      }
+      main > p {
+        font-size: 22px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #2ce857;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-section-one">
+        <a href="index.html">
+          <img src="images/image1.png" class="logo" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-section-two">
+        <div class="links">
+          <a href="symptoms.html"><h1 class="link">Symptoms</h1></a>
+          <a href="prevention.html"><h1 class="link">Prevention</h1></a>
+          <a href="vaccines.html"><h1 class="link">Vaccines</h1></a>
+        </div>
+        <a href="livedata.html">
+          <button class="live">
+            <img src="images/image3.png" class="live-img" alt="live" />
+            <h1>Live Covid Updates</h1>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1>Prevention</h1>
+      <h2>To prevent the spread of COVID-19:</h2>
+      <ul>
+        <li>
+          Maintain a safe distance from others (at least 1 metre), even if they
+          don’t appear to be sick.
+        </li>
+        <li>
+          Wear a mask in public, especially indoors or when physical distancing
+          is not possible.
+        </li>
+        <li>
+          Choose open, well-ventilated spaces over closed ones. Open a window if
+          indoors.
+        </li>
+        <li>
+          Clean your hands often. Use soap and water, or an alcohol-based hand
+          rub.
+        </li>
+        <li>
+          Get vaccinated when it’s your turn. Follow local guidance about
+          vaccination.
+        </li>
+        <li>
+          Cover your nose and mouth with your bent elbow or a tissue when you
+          cough or sneeze.
+        </li>
+        <li>Stay home if you feel unwell.</li>
+      </ul>
+      <p>
+        If you have a fever, cough and difficulty breathing, seek medical
+        attention. Call in advance so your healthcare provider can direct you to
+        the right health facility. This protects you, and prevents the spread of
+        viruses and other infection
+      </p>
+      <p>
+        The Harvard T.H. Chan School of Public Health recommends a healthy diet,
+        being physically active, managing psychological stress, and getting
+        enough sleep. Consistently meeting scientific guidelines of 150+ minutes
+        per week of exercise or similar physical activity was shown to be
+        associated with a smaller risk of hospitalisation and death due to
+        COVID‑19, even when considering likely risk factors such as elevated
+        Body mass index (BMI).
+      </p>
+    </main>
+  </body>
+</html>

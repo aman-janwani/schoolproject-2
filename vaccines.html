@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/image2.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVIDSY</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #161625;
+        font-family: "Monaco", monospace;
+      }
+      .navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar-section-one {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        flex-grow: 1;
+      }
+      .logo {
+        cursor: pointer;
+        height: 80px;
+      }
+      .navbar-section-two {
+        color: #bc1823;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #e23028;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+      .link {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 50px;
+      }
+      .live-img {
+        height: 20px;
+        width: 20px;
+        margin: 4px;
+      }
+      .live {
+        cursor: pointer;
+        flex-grow: 1;
+        max-width: 250px;
+        margin: 5px;
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        background: transparent;
+        border: #e23028 solid 2px;
+        align-items: center;
+        padding: 9px;
+        border-radius: 15px;
+        font-family: "Monaco", monospace;
+      }
+      .live:hover {
+        background: #e23028;
+        color: #fff;
+      }
+      main {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        background: #1e1e30;
+      }
+      main > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2ce857;
+      }
+      main > p {
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        color: #83bff7;
+      }
+      main > h2 {
+        font-size: 35px;
+        margin: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #2ce857;
+      }
+      main > div {
+        display: flex;
+      }
+      main > h3 {
+        font-size: 30px;
+        margin: 20px;
+        margin-bottom: 40px;
+        color: #2ce857;
+      }
+      main > div > p {
+        font-size: 20px;
+        text-align: left;
+        margin: 20px;
+        color: #83bff7;
+      }
+      main > div > img {
+        height: 250px;
+        margin: 20px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-section-one">
+        <a href="index.html">
+          <img src="images/image1.png" class="logo" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-section-two">
+        <div class="links">
+          <a href="symptoms.html"><h1 class="link">Symptoms</h1></a>
+          <a href="prevention.html"><h1 class="link">Prevention</h1></a>
+          <a href="vaccines.html"><h1 class="link">Vaccines</h1></a>
+        </div>
+        <a href="livedata.html">
+          <button class="live">
+            <img src="images/image3.png" class="live-img" alt="live" />
+            <h1>Live Covid Updates</h1>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1>Vaccines</h1>
+      <p>
+        A COVID‑19 vaccine is a vaccine intended to provide acquired immunity
+        against severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2),
+        the virus that causes coronavirus disease 2019 (COVID‑19).
+      </p>
+      <p>
+        Prior to the COVID‑19 pandemic, an established body of knowledge existed
+        about the structure and function of coronaviruses causing diseases like
+        severe acute respiratory syndrome (SARS) and Middle East respiratory
+        syndrome (MERS). This knowledge accelerated the development of various
+        vaccine platforms during early 2020. The initial focus of SARS-CoV-2
+        vaccines was on preventing symptomatic, often severe illness. On 10
+        January 2020, the SARS-CoV-2 genetic sequence data was shared through
+        GISAID, and by 19 March, the global pharmaceutical industry announced a
+        major commitment to address COVID‑19.
+      </p>
+      <p>
+        The COVID‑19 vaccines are widely credited for their role in reducing the
+        severity and death caused by COVID‑19.[4][5] Many countries have
+        implemented phased distribution plans that prioritize those at highest
+        risk of complications, such as the elderly, and those at high risk of
+        exposure and transmission, such as healthcare workers.
+      </p>
+      <h2>Two Types of Vaccines:</h2>
+      <h3>Covaxin</h3>
+      <div>
+        <p>
+          Covaxin (codenamed as BBV152) is an inactivated virus-based COVID-19
+          vaccine developed by Bharat Biotech in collaboration with the Indian
+          Council of Medical Research - National Institute of Virology. As of
+          October 2021, 110.6 million people in India have received Covaxin. On
+          3 November 2021, the World Health Organization (WHO) validated the
+          vaccine for emergency use. A phase 3 clinical trial with 25,798
+          participants found that the vaccine is 64% (95% CI, 29–82%) effective
+          against asymptomatic cases, 78% (65–86%) effective against symptomatic
+          disease, 93% (57–100%) effective against severe disease, and 65%
+          (33–83%) effective against the Delta variant.
+        </p>
+        <img src="images/image7.jpg" alt="Covaxin" />
+      </div>
+      <h3>Covishield</h3>
+      <div>
+        <p>
+          The Oxford–AstraZeneca COVID-19 vaccine, codenamed AZD1222, and sold
+          under the brand names Covishield and Vaxzevria among others, is a
+          viral vector vaccine for prevention of COVID-19. Developed in the
+          United Kingdom by the Oxford University and British-Swedish company
+          AstraZeneca, using as a vector the modified chimpanzee adenovirus
+          ChAdOx1. The vaccine is given by intramuscular injection. Studies
+          carried out in 2020 showed that the efficacy of the vaccine is 76.0%
+          at preventing symptomatic COVID-19 beginning at 22 days following the
+          first dose, and 81.3% after the second dose. A study in Scotland found
+          that, for symptomatic COVID-19 infection after the second dose, the
+          vaccine is 81% effective against the Alpha variant (lineage B.1.1.7),
+          and 61% against the Delta variant (lineage B.1.617.2)
+        </p>
+        <img src="images/image8.jpg" alt="Covishield" />
+      </div>
+    </main>
+  </body>
+</html>
